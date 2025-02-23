@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #F44336;
-    --secondary-color: #464646;
-    --tertiary-color: #ffba31;
-    --quaternary-color: #ffffff;
+    --primary-color: #1d2d44;
+    --secondary-color: #0d1321;
+    --tertiary-color: #748cab;
+    --quaternary-color: #50647f;
 }
 
 body {
@@ -10,10 +10,19 @@ body {
 }
 
 header {
-    background-color: var(--primary-color)!important;
+    background-color: var(--primary-color) !important;
     position: fixed;
     z-index: 1000;
+    width: 100%;
 }
+
+/* En pantallas menores a 768px (móviles), quitar el `fixed` */
+@media (max-width: 767px) {
+    header {
+        position: relative; /* O puedes usar position: relative; */
+    }
+}
+
 
 .logo {
     width: 100px;
@@ -22,6 +31,7 @@ header {
 
 .custom-container-1 {
     position: relative;
+    margin-top: 5rem;
 }
 
 .custom-container-1 img {
@@ -35,15 +45,20 @@ header {
     width: 40% !important;
     color: white;
     font-size: 2rem;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     padding: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     border-radius: 10px;
 }
 
+.custom-text-1 h4 {
+    color: var(--quaternary-color) !important;
+    font-style: italic;
+}
+
 .custom-h {
-    color: var(--primary-color) !important;
-    border-bottom: var(--primary-color) 2px solid;
+    color: var(--tertiary-color) !important;
+    border-bottom: var(--tertiary-color) 2px solid;
     padding-bottom: 0.4rem;
 }
 
@@ -81,6 +96,6 @@ header {
 }
 
 .text-container-1 b {
-    color: var(--primary-color) !important;
+    color: var(--tertiary-color) !important;
 }
 
