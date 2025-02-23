@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #e03030;
+    --secondary-color: #5b5b5b;
+    --tertiary-color: #ffba31;
+    --quaternary-color: #ffffff;
+}
+
+body {
+    background-color: var(--secondary-color) !important;
+}
+
+header {
+    background-color: var(--primary-color)!important;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.custom-container-1 {
+    position: relative;
+}
+
+.custom-container-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.custom-text-1 {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    color: white;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+
+.nav-item-text {
+    font-size: 1rem !important;
+    color: white !important;
+}
+
+.nav-item-text:hover {
+    color: #ffba31 !important;
+}
+
+.nav-item-social {
+    font-size: 1.7rem !important;
+}
+
+
+
+
+
+
+
