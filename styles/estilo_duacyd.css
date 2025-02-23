@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #e03030;
-    --secondary-color: #5b5b5b;
+    --primary-color: #eb3c3c;
+    --secondary-color: #464646;
     --tertiary-color: #ffba31;
     --quaternary-color: #ffffff;
 }
@@ -30,13 +30,19 @@ header {
 .custom-text-1 {
     position: absolute;
     top: 50%;
-    width: 40%;
+    width: 40% !important;
     color: white;
     font-size: 2rem;
     background-color: var(--primary-color);
     padding: 1rem;
     margin-left: 1rem;
     border-radius: 10px;
+}
+
+.custom-h {
+    color: var(--primary-color) !important;
+    border-bottom: var(--primary-color) 2px solid;
+    padding-bottom: 0.4rem;
 }
 
 .nav-item-text {
@@ -52,9 +58,27 @@ header {
     font-size: 1.7rem !important;
 }
 
+.text-container-1 {
+    padding: 1rem;
+}
 
+.text-container-1 p {
+    text-align: justify;
+}
 
+.img-container-1 {
+    width: 600px;
+    padding: 0.6rem;
+    margin: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
 
+.img-container-1 img {
+    border-radius: 10px;
+}
 
-
+.text-container-1 b {
+    color: var(--primary-color) !important;
+}
 
