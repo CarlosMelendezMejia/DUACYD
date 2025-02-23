@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #eb3c3c;
+    --primary-color: #F44336;
     --secondary-color: #464646;
     --tertiary-color: #ffba31;
     --quaternary-color: #ffffff;
@@ -11,6 +11,8 @@ body {
 
 header {
     background-color: var(--primary-color)!important;
+    position: fixed;
+    z-index: 1000;
 }
 
 .logo {
