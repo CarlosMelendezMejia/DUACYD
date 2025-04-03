@@ -118,62 +118,252 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="row h1-container">
-            <h1>
-                Preguntas Frecuentes
-            </h1>
-        </div>
-        <div class="row question-container">
-            <h2 class="text-white pregunta">Pregunta 1</h2>
-            <h4 class="text-white respuesta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea inventore ipsam velit
-                tempore saepe totam blanditiis possimus nemo corrupti, ipsum dolores, quis laboriosam rem numquam
-                voluptatibus vitae eligendi nam rerum!. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Exercitationem aspernatur sequi placeat. Delectus nisi sapiente consectetur voluptates qui voluptate
-                vitae odit a quaerat, ut explicabo, culpa ab doloribus cupiditate maxime.</h4>
-        </div>
-        <div class="row question-container">
-            <h2 class="text-white pregunta">Pregunta 2</h2>
-            <h4 class="text-white respuesta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea inventore ipsam velit
-                tempore saepe totam blanditiis possimus nemo corrupti, ipsum dolores, quis laboriosam rem numquam
-                voluptatibus vitae eligendi nam rerum!. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Exercitationem aspernatur sequi placeat. Delectus nisi sapiente consectetur voluptates qui voluptate
-                vitae odit a quaerat, ut explicabo, culpa ab doloribus cupiditate maxime.</h4>
-        </div>
-        <div class="row question-container">
-            <h2 class="text-white pregunta">Pregunta 3</h2>
-            <h4 class="text-white respuesta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea inventore ipsam velit
-                tempore saepe totam blanditiis possimus nemo corrupti, ipsum dolores, quis laboriosam rem numquam
-                voluptatibus vitae eligendi nam rerum!. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Exercitationem aspernatur sequi placeat. Delectus nisi sapiente consectetur voluptates qui voluptate
-                vitae odit a quaerat, ut explicabo, culpa ab doloribus cupiditate maxime.</h4>
-        </div>
-        <div class="row question-container">
-            <h2 class="row text-white pregunta">Pregunta 4</h2>
-            <h4 class="row text-white respuesta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea inventore ipsam velit
-                tempore saepe totam blanditiis possimus nemo corrupti, ipsum dolores, quis laboriosam rem numquam
-                voluptatibus vitae eligendi nam rerum!. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Exercitationem aspernatur sequi placeat. Delectus nisi sapiente consectetur voluptates qui voluptate
-                vitae odit a quaerat, ut explicabo, culpa ab doloribus cupiditate maxime.</h4>
-            <div class="row d-flex justify-content-center align-items-center">
-                <ul class="list-group">
-                    <li class="list-group-item">Elemento 1</li>
-                    <li class="list-group-item">Elemento 2</li>
-                    <li class="list-group-item">Elemento 3</li>
-                    <li class="list-group-item">Elemento 4</li>
-                </ul>
+    <main class="animate__animated animate__fadeIn">
+        <!-- Hero Section -->
+        <div class="custom-container-1 row position-relative overflow-hidden">
+            <img src="https://placehold.co/1200x600?text=Preguntas+Frecuentes" alt="Estudiantes en clase" class="img-fluid zoom-effect">
+            <div class="custom-text-1 d-none d-lg-block animate__animated animate__fadeInRight">
+                <h1 class="animate__animated animate__fadeInDown">Preguntas Frecuentes</h1>
+                <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Encuentra respuestas a las dudas más comunes sobre DUACyD</h3>
             </div>
-        </div>
-        <div class="row question-container">
-            <h2 class="text-white pregunta">Pregunta 5</h2>
-            <h4 class="text-white respuesta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea inventore ipsam velit
-                tempore saepe totam blanditiis possimus nemo corrupti, ipsum dolores, quis laboriosam rem numquam
-                voluptatibus vitae eligendi nam rerum!. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Exercitationem aspernatur sequi placeat. Delectus nisi sapiente consectetur voluptates qui voluptate
-                vitae odit a quaerat, ut explicabo, culpa ab doloribus cupiditate maxime.</h4>
+            <div class="hero-overlay"></div>
         </div>
         
+        <!-- Título móvil -->
+        <div class="row py-4 d-lg-none d-flex justify-content-center animate__animated animate__bounceIn">
+            <h1 class="col-10 col-sm-8 col-md-6 custom-h py-2 text-center pulse-effect" style="background-color: var(--important-color); color: var(--secondary-color);">FAQs</h1>
+        </div>
+        
+        <!-- Sección: General -->
+        <section class="faq-section py-5 px-4 animate__animated" data-animation="animate__fadeIn">
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="custom-h"><i class="fas fa-info-circle me-2"></i> Información General</h2>
+                </div>
+            </div>
+            
+            <div class="row accordion" id="faqGeneral">
+                <div class="col-12 mb-3">
+                    <div class="accordion-item border-0 shadow-sm rounded-4 overflow-hidden">
+                        <h2 class="accordion-header" id="faqHeading1">
+                            <button class="accordion-button bg-gradient text-white hover-effect-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                <i class="fas fa-university fa-lg me-3"></i> ¿Qué es DUACyD?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqGeneral">
+                            <div class="accordion-body bg-light">
+                                La DUACyD es la División de Universidad Abierta, Continua y a Distancia de la FES Aragón, encargada de coordinar programas educativos flexibles para distintos perfiles y necesidades.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sección: Programas -->
+        <section class="faq-section py-5 px-4 animate__animated" data-animation="animate__fadeIn">
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="custom-h"><i class="fas fa-graduation-cap me-2"></i> Oferta Educativa</h2>
+                </div>
+            </div>
+            
+            <div class="row accordion" id="faqProgramas">
+                <div class="col-12 mb-3">
+                    <div class="accordion-item border-0 shadow-sm rounded-4 overflow-hidden">
+                        <h2 class="accordion-header" id="faqHeading2">
+                            <button class="accordion-button bg-gradient text-white hover-effect-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                <i class="fas fa-book-open fa-lg me-3"></i> ¿Qué programas ofrece DUACyD?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqProgramas">
+                            <div class="accordion-body bg-light">
+                                DUACyD ofrece programas de Educación Continua, Universidad Abierta y cursos de idiomas a través del Centro de Lenguas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sección: Inscripción -->
+        <section class="faq-section py-5 px-4 animate__animated" data-animation="animate__fadeIn">
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="custom-h"><i class="fas fa-edit me-2"></i> Inscripción y Registro</h2>
+                </div>
+            </div>
+            
+            <div class="row accordion" id="faqInscripcion">
+                <div class="col-12 mb-3">
+                    <div class="accordion-item border-0 shadow-sm rounded-4 overflow-hidden">
+                        <h2 class="accordion-header" id="faqHeading3">
+                            <button class="accordion-button bg-gradient text-white hover-effect-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                <i class="fas fa-user-plus fa-lg me-3"></i> ¿Cómo puedo inscribirme a un curso o diplomado?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqInscripcion">
+                            <div class="accordion-body bg-light">
+                                Puedes consultar la oferta educativa actual en nuestra web y seguir los pasos indicados en cada programa para la inscripción.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sección: Validez y Certificación -->
+        <section class="faq-section py-5 px-4 animate__animated" data-animation="animate__fadeIn">
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="custom-h"><i class="fas fa-certificate me-2"></i> Validez y Certificación</h2>
+                </div>
+            </div>
+            
+            <div class="row accordion" id="faqValidez">
+                <div class="col-12 mb-3">
+                    <div class="accordion-item border-0 shadow-sm rounded-4 overflow-hidden">
+                        <h2 class="accordion-header" id="faqHeading4">
+                            <button class="accordion-button bg-gradient text-white hover-effect-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                <i class="fas fa-shield-alt fa-lg me-3"></i> ¿Los programas tienen validez oficial?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqValidez">
+                            <div class="accordion-body bg-light">
+                                Sí, los programas de DUACyD cuentan con el respaldo académico de la UNAM, garantizando su calidad y reconocimiento oficial.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <!-- Estilos CSS con tu paleta de colores -->
+    <style>
+        :root {
+            --primary-color: #1d2d44;
+            --secondary-color: #0d1321;
+            --tertiary-color: #748cab;
+            --quaternary-color: #50647f;
+            --important-color: #ffba31;
+        }
+        
+        body {
+            color: var(--secondary-color);
+        }
+        
+        .custom-h {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        .text-tertiary {
+            color: var(--tertiary-color);
+        }
+        
+        /* Efectos hover mejorados con texto blanco */
+        .hover-effect-white {
+            transition: all 0.3s ease;
+            color: white !important;
+        }
+        
+        .hover-effect-white:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background-color: var(--secondary-color);
+        }
+        
+        /* Animaciones y efectos */
+        .zoom-effect {
+            transition: transform 0.5s ease;
+        }
+        .zoom-effect:hover {
+            transform: scale(1.03);
+        }
+        
+        .pulse-effect {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Efectos especiales */
+        .bg-gradient {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--quaternary-color) 100%);
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 19, 33, 0.6);
+            z-index: 0;
+        }
+        
+        .custom-text-1 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+            color: white;
+            z-index: 1;
+            max-width: 50%;
+        }
+        
+        .custom-container-1 {
+            position: relative;
+            min-height: 400px;
+            background-color: var(--secondary-color);
+        }
+        
+        /* Estilos para acordeón */
+        .accordion-button:not(.collapsed) {
+            color: white;
+            background-color: var(--quaternary-color);
+        }
+        
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(29, 45, 68, 0.25);
+        }
+        
+        .faq-section {
+            background-color: rgba(116, 140, 171, 0.05);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .custom-text-1 {
+                position: static;
+                transform: none;
+                max-width: 100%;
+                padding: 2rem;
+                color: var(--secondary-color);
+                background: rgba(255,255,255,0.9);
+                margin-top: -5px;
+            }
+            
+            .custom-container-1 {
+                min-height: auto;
+            }
+            
+            .accordion-button {
+                font-size: 0.9rem;
+            }
+            
+            .accordion-button i {
+                font-size: 1rem;
+            }
+        }
+    </style>
     <footer class="py-4">
         <div class="row">
             <div class="container py-3">
