@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #1d2d44;
+    --primary-color: #563ccb;
     --secondary-color: #0d1321;
     --tertiary-color: #748cab;
     --quaternary-color: #50647f;
@@ -53,6 +53,7 @@ footer a {
 .custom-container-1 {
     position: relative;
     margin-top: 5rem;
+    overflow: hidden;
 }
 
 .custom-container-1 img {
@@ -62,17 +63,81 @@ footer a {
 
 .custom-text-1 {
     position: absolute;
-    top: 48%;
-    width: auto !important;
-    height: 10rem;
+    bottom: 2rem; /* Posición desde abajo */
+    left: 2rem; /* Posición desde la izquierda */
+    width: auto;
+    max-width: 50%; /* Limita el ancho para no ocupar toda la pantalla */
     color: white;
-    font-size: 2rem;
-    background-color: var(--tertiary-color);
-    padding: 1rem;
-    margin-left: 2rem;
+    font-size: 1.5rem; /* Reducimos un poco el tamaño para pantallas grandes */
+    background-color: rgba(116, 140, 171, 0.85); /* Color con transparencia */
+    padding: 1.5rem;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para mejor contraste */
+    backdrop-filter: blur(2px); /* Efecto de vidrio esmerilado */
 }
 
+.custom-text-1 h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.custom-text-1 h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.custom-text-1 h4 {
+    color: var(--important-color) !important; /* Cambiamos a color destacado */
+    font-style: italic;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+    .custom-text-1 {
+        max-width: 60%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-text-1 {
+        max-width: 70%;
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    
+    .custom-text-1 h1 {
+        font-size: 1.7rem;
+    }
+    
+    .custom-text-1 h3 {
+        font-size: 1.3rem;
+    }
+    
+    .custom-text-1 h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-text-1 {
+        position: relative;
+        max-width: 100%;
+        bottom: auto;
+        left: auto;
+        margin: 1rem;
+        background-color: var(--tertiary-color);
+    }
+    
+    .custom-container-1 {
+        margin-top: 0; /* Como el header ya no es fixed en móviles */
+    }
+}
 
 .custom-text-1 h4 {
     color: var(--quaternary-color) !important;
